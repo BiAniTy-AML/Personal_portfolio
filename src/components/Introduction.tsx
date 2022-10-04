@@ -12,7 +12,7 @@ const Intro: FC<Props> = () => {
             <img src={prof_pic} alt="" className="profile_pic" />
 
             <div className="greetings">
-                <h2 className="title">About me</h2>
+                <h2 className="header">About me</h2>
 
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -24,6 +24,8 @@ const Intro: FC<Props> = () => {
                     quisquam ea dolorum, iusto voluptatem.
                 </p>
             </div>
+
+            <h2 className="header">Skills:</h2>
 
             <div className="known_tech">
                 <div className="tech">

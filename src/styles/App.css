@@ -27,23 +27,24 @@ body {
     align-items: center;
 }
 
+.intro_container .header {
+    font-size: 2rem;
+    text-align: center;
+}
+
 .profile_pic {
     border-radius: 20px;
 
     width: 70vw;
 
-    /* float: left; */
     margin: 1%;
-}
-
-.greetings .title {
-    font-size: 2rem;
-    text-align: center;
 }
 
 .known_tech {
     background-color: #555;
     padding: 10px;
+
+    align-self: stretch;
 
     justify-content: space-between;
 
