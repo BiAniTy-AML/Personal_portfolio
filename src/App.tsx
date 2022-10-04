@@ -1,8 +1,14 @@
-import React from 'react';
+import { FC } from 'react';
 import './styles/App.css';
 
-const App = () => {
-    return <div></div>;
+import Intro from './components/Introduction';
+
+const App: FC = () => {
+    return (
+        <div className="main_container">
+            <Intro />
+        </div>
+    );
 };
 
 export default App;
