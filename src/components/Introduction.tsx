@@ -11,17 +11,71 @@ const Intro: FC<Props> = () => {
 
             <img src={prof_pic} alt="" className="profile_pic" />
 
-            <p className="greetings">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-                qui in aperiam voluptatibus, nobis quo voluptatem veritatis
-                esse. Repudiandae, esse! Iusto laboriosam optio recusandae,
-                soluta porro assumenda voluptatibus animi, in veritatis
-                voluptatum minima ipsa natus ducimus neque doloremque saepe,
-                placeat fuga dolor eaque? Aliquid commodi quisquam ea dolorum,
-                iusto voluptatem.
-            </p>
+            <div className="greetings">
+                <h2 className="title">About me</h2>
 
-            <div className="known_tech"></div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore qui in aperiam voluptatibus, nobis quo voluptatem
+                    veritatis esse. Repudiandae, esse! Iusto laboriosam optio
+                    recusandae, soluta porro assumenda voluptatibus animi, in
+                    veritatis voluptatum minima ipsa natus ducimus neque
+                    doloremque saepe, placeat fuga dolor eaque? Aliquid commodi
+                    quisquam ea dolorum, iusto voluptatem.
+                </p>
+            </div>
+
+            <div className="known_tech">
+                <div className="tech">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt=""
+                        className="icon"
+                    />
+
+                    <div className="name">Javascript</div>
+                </div>
+
+                <div className="tech">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                        alt=""
+                        className="icon"
+                    />
+
+                    <div className="name">Typescript</div>
+                </div>
+
+                <div className="tech">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                        alt=""
+                        className="icon"
+                    />
+
+                    <div className="name">React</div>
+                </div>
+
+                <div className="tech">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                        alt=""
+                        className="icon"
+                    />
+
+                    <div className="name">CSS</div>
+                </div>
+
+                <div className="tech">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                        alt=""
+                        className="icon"
+                    />
+
+                    <div className="name">HTML</div>
+                </div>
+            </div>
         </section>
     );
 };

@@ -5,6 +5,10 @@
     font-size: 16px;
 }
 
+body {
+    background: #999;
+}
+
 .main_container {
     max-width: 80%;
     margin: 0 auto;
@@ -15,17 +19,57 @@
 .intro_container {
     border: 1px solid red;
     padding: 3px 10px;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .profile_pic {
-    max-height: 10rem;
     border-radius: 20px;
-    float: left;
+
+    width: 70vw;
+
+    /* float: left; */
     margin: 1%;
 }
 
-/* .greetings { */
-/*     border: 1px solid purple; */
-/* } */
+.greetings .title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.known_tech {
+    background-color: #555;
+    padding: 10px;
+
+    justify-content: space-between;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+}
+
+.tech {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    margin: 5px 0;
+}
+
+.known_tech .icon {
+    width: 100px;
+}
+
+.known_tech .name {
+    font-weight: bold;
+}
+
+.greetings {
+    margin: 1rem 0;
+}
 
 /* Introduction starts here */
