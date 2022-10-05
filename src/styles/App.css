@@ -10,14 +10,19 @@ body {
 }
 
 .main_container {
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
+}
+
+.section_cont {
+    border: 1px solid red;
+
+    margin-bottom: 10px;
 }
 
 /* Introduction starts here */
 
 .intro_container {
-    border: 1px solid red;
     padding: 3px 10px;
 
     display: flex;
@@ -27,7 +32,7 @@ body {
     align-items: center;
 }
 
-.intro_container .header {
+.header {
     font-size: 2rem;
     text-align: center;
 }
@@ -39,6 +44,14 @@ body {
 
     margin: 1%;
 }
+
+.greetings {
+    margin: 1rem 0;
+}
+
+/* Introduction ends here */
+
+/* Skills starts here */
 
 .known_tech {
     background-color: #555;
@@ -69,8 +82,4 @@ body {
     font-weight: bold;
 }
 
-.greetings {
-    margin: 1rem 0;
-}
-
-/* Introduction starts here */
+/* Skills ends here */
