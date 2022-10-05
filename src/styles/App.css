@@ -25,6 +25,13 @@ body {
     text-align: center;
 }
 
+.details {
+    border: 2px solid #333;
+    box-shadow: 3px 3px 3px #666;
+    padding: 5px;
+    width: 100%;
+}
+
 /* ---------------------------------------------------- */
 
 /* Introduction starts here */
@@ -113,14 +120,44 @@ body {
 }
 
 .project .screenshot {
-    width: 80vw;
+    width: 85vw;
     height: 300px;
     background: #c94ac9;
 }
 
-.project .description {
+.project .description,
+.project .name {
+    text-align: center;
+}
+
+.project .main_info {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    align-self: stretch;
+}
+
+.project .name {
     font-weight: bold;
     text-align: center;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.project .icon {
+    height: 30px;
+}
+
+.project .details {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 90vw;
+
+    justify-content: center;
+    align-items: center;
 }
 
 /* Projects ends here */
