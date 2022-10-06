@@ -1,3 +1,11 @@
+:root {
+    --body_bg: #e2dcde;
+    --sections_bg: #f1e4e8;
+    --details_bg: #ceb1be;
+    --slightly_dark_color: #b97375;
+    --dark_color: #2d2d34;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +14,7 @@
 }
 
 body {
-    background: #999;
+    background: var(--body_bg);
 }
 
 .main_container {
@@ -15,9 +23,11 @@ body {
 }
 
 .section_cont {
-    border: 1px solid red;
+    box-shadow: -3px -3px 3px black;
 
     margin-bottom: 10px;
+
+    background-color: var(--sections_bg);
 }
 
 .header {
@@ -30,6 +40,10 @@ body {
     box-shadow: 3px 3px 3px #666;
     padding: 5px;
     width: 100%;
+
+    background-color: var(--details_bg);
+
+    border-radius: 10px;
 }
 
 /* ---------------------------------------------------- */
@@ -44,6 +58,10 @@ body {
 
     justify-content: center;
     align-items: center;
+}
+
+.intro_container .my_name {
+    align-self: start;
 }
 
 .profile_pic {
@@ -65,7 +83,7 @@ body {
 /* Skills starts here */
 
 .known_tech {
-    background-color: #555;
+    background-color: var(--slightly_dark_color);
     padding: 10px;
 
     align-self: stretch;
@@ -165,6 +183,15 @@ body {
 /* ---------------------------------------------------- */
 
 /* Contacts starts here */
+
+.contacts_container {
+    width: 100vw;
+
+    transform: translateX(-50%);
+    margin-left: 50%;
+
+    margin-bottom: 0;
+}
 
 .contacts {
     display: flex;

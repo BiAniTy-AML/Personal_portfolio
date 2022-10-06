@@ -7,6 +7,8 @@ interface Props {}
 const Intro: FC<Props> = () => {
     return (
         <section className="intro_container section_cont">
+            <h2 className="my_name header">Dray</h2>
+
             {/* Photo by <a href="https://unsplash.com/@degleex?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Degleex</a> on <a href="https://unsplash.com/s/photos/background-forest?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */}
             <img src={prof_pic} alt="" className="profile_pic" />
 
