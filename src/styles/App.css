@@ -163,3 +163,45 @@ body {
 /* Projects ends here */
 
 /* ---------------------------------------------------- */
+
+/* Contacts starts here */
+
+.contacts {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+
+    align-items: center;
+}
+
+.contacts > p {
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    gap: 5px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .icon {
+    width: 35px;
+}
+
+.footer.icons {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+
+    margin-top: 20px;
+}
+
+.footer .icon {
+    width: 60px;
+}
+
+/* Contacts ends here */
+
+/* ---------------------------------------------------- */

@@ -4,6 +4,7 @@ import './styles/App.css';
 import Intro from './components/Introduction';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Contacts from './components/Contacts';
 
 const App: FC = () => {
     return (
@@ -13,6 +14,8 @@ const App: FC = () => {
             <Skills />
 
             <Projects />
+
+            <Contacts />
         </div>
     );
 };
