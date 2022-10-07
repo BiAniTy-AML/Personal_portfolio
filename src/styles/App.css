@@ -139,7 +139,7 @@ body {
 
 .project .screenshot {
     width: 85vw;
-    height: 300px;
+    aspect-ratio: 16/9;
     background: #c94ac9;
 }
 
@@ -232,3 +232,21 @@ body {
 /* Contacts ends here */
 
 /* ---------------------------------------------------- */
+
+@media (min-width: 40em) {
+    .project .screenshot {
+        width: 30vw;
+    }
+
+    .project .details {
+        max-width: 40vw;
+    }
+
+    .profile_pic {
+        width: 20vw;
+    }
+
+    .intro_container {
+        flex-flow: row nowrap;
+    }
+}
