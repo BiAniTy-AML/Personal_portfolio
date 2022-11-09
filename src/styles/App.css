@@ -137,10 +137,15 @@ body {
     flex-shrink: 0;
 }
 
+.project .icons {
+    display: flex;
+    gap: 2rem;
+}
+
 .project .screenshot {
     width: 85vw;
     aspect-ratio: 16/9;
-    background: #c94ac9;
+    background: var(--sections_bg);
 }
 
 .project .description,

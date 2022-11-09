@@ -1,108 +1,123 @@
-import { FC } from 'react';
+import React, { FC, ReactElement } from "react";
+
+import external_link_img from "../assets/icons/external-link.svg";
 
 interface Props {}
 
+type Project = {
+    name: string;
+    description: string;
+    screenshot: string;
+    live_link: string;
+    gh_link: string;
+};
+
 const Projects: FC<Props> = () => {
+    const projects: Project[] = [
+        {
+            name: "Rock Paper Scissors",
+            description: "Simple r.p.s game",
+            screenshot: "rps.png",
+            live_link: "https://bianity-aml.github.io/Rock_paper_scissors/",
+            gh_link: "https://github.com/BiAniTy-AML/Rock_paper_scissors",
+        },
+        {
+            name: "Weather App",
+            description: "Check the weather!",
+            screenshot: "weather.png",
+            live_link: "https://bianity-aml.github.io/Weather_App/",
+            gh_link: "https://github.com/BiAniTy-AML/Weather_App",
+        },
+        {
+            name: "Gem shop",
+            description: "A fictional shop",
+            screenshot: "gem_shop.png",
+            live_link: "https://bianity-aml.github.io/Shop_page/",
+            gh_link: "https://github.com/BiAniTy-AML/Shop_page",
+        },
+        {
+            name: "Tic Tac Toe",
+            description: "A tic tac toe board",
+            screenshot: "ttt.png",
+            live_link: "https://bianity-aml.github.io/Tic_Tac_Toe/",
+            gh_link: "https://github.com/BiAniTy-AML/Tic_Tac_Toe",
+        },
+        {
+            name: "Memory card game",
+            description:
+                "Can you remember which cards have you already picked?",
+            screenshot: "mem_card.png",
+            live_link: "https://bianity-aml.github.io/Memory_card/",
+            gh_link: "https://github.com/BiAniTy-AML/Memory_card",
+        },
+        {
+            name: "Sign up form",
+            description: "A design for signing up in a site",
+            screenshot: "signup.png",
+            live_link: "https://bianity-aml.github.io/sign-up_form/",
+            gh_link: "https://github.com/BiAniTy-AML/sign-up_form",
+        },
+        {
+            name: "Todo list",
+            description: "A todo list site",
+            screenshot: "todolist.png",
+            live_link: "https://bianity-aml.github.io/Todo_List/",
+            gh_link: "https://github.com/BiAniTy-AML/Todo_List",
+        },
+        {
+            name: "Sketchpad",
+            description: "A drawing board",
+            screenshot: "sketchpad.png",
+            live_link: "https://bianity-aml.github.io/Sketchpad/",
+            gh_link: "https://github.com/BiAniTy-AML/Sketchpad",
+        },
+    ];
+    const projs_DOM: ReactElement[] = [];
+
+    projects.forEach((proj) =>
+        projs_DOM.push(
+            <div className="project" key={proj.name + proj.description}>
+                <img
+                    src={require(`../assets/images/${proj.screenshot}`)}
+                    alt=""
+                    className="screenshot"
+                />
+                <div className="details">
+                    <div className="main_info">
+                        <div className="name">{proj.name}</div>
+                        <div className="icons">
+                            <a href={proj.live_link}>
+                                <img
+                                    src={external_link_img}
+                                    alt=""
+                                    className="icon"
+                                />
+                            </a>
+
+                            <a href={proj.gh_link}>
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                    alt=""
+                                    className="icon"
+                                />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div className="description">{proj.description}</div>
+                </div>
+            </div>,
+        ),
+    );
+
     return (
         <section className="projects_container section_cont">
             <h2 className="header">Projects:</h2>
 
             <div className="projects">
-                <div className="project">
-                    <img src="" alt="" className="screenshot" />
-                    <div className="details">
-                        <div className="main_info">
-                            <div className="name">Project 01</div>
-                            <div className="icons">
-                                <a href="#">
-                                    <img
-                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                                        alt=""
-                                        className="icon"
-                                    />
-                                </a>
-                            </div>
-                        </div>
-
-                        <div className="description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Dolores reprehenderit illo perferendis ducimus
-                            vel excepturi fugit totam asperiores maxime dolorum?
-                        </div>
-                    </div>
-                </div>
-
-                <div className="project">
-                    <img src="" alt="" className="screenshot" />
-                    <div className="details">
-                        <div className="main_info">
-                            <div className="name">Project 02</div>
-                            <div className="icons">
-                                <a href="#">
-                                    <img
-                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                                        alt=""
-                                        className="icon"
-                                    />
-                                </a>
-                            </div>
-                        </div>
-
-                        <div className="description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Hic, nam? Esse alias, sed molestias dolore
-                            ipsa recusandae dicta nobis eaque.
-                        </div>
-                    </div>
-                </div>
-
-                <div className="project">
-                    <img src="" alt="" className="screenshot" />
-                    <div className="details">
-                        <div className="main_info">
-                            <div className="name">Project 03</div>
-                            <div className="icons">
-                                <a href="#">
-                                    <img
-                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                                        alt=""
-                                        className="icon"
-                                    />
-                                </a>
-                            </div>
-                        </div>
-
-                        <div className="description">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Ipsum blanditiis modi autem cum totam eos
-                            soluta reprehenderit, placeat magni assumenda?
-                        </div>
-                    </div>
-                </div>
-                <div className="project">
-                    <img src="" alt="" className="screenshot" />
-                    <div className="details">
-                        <div className="main_info">
-                            <div className="name">Project 04</div>
-                            <div className="icons">
-                                <a href="#">
-                                    <img
-                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                                        alt=""
-                                        className="icon"
-                                    />
-                                </a>
-                            </div>
-                        </div>
-
-                        <div className="description">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Dolorum, amet quibusdam. Dignissimos dolore
-                            voluptates reiciendis exercitationem quibusdam unde
-                            delectus quasi.
-                        </div>
-                    </div>
-                </div>
+                {projs_DOM.map((proj) => {
+                    return proj;
+                })}
             </div>
         </section>
     );
