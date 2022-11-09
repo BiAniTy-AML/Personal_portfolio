@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC } from "react";
 
 interface Props {}
 
@@ -56,6 +56,26 @@ const Skills: FC<Props> = () => {
                     />
 
                     <div className="name">HTML</div>
+                </div>
+
+                <div className="tech">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+                        alt=""
+                        className="icon"
+                    />
+
+                    <div className="name">SASS</div>
+                </div>
+
+                <div className="tech">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg"
+                        alt=""
+                        className="icon"
+                    />
+
+                    <div className="name">Webpack</div>
                 </div>
             </div>
         </section>
