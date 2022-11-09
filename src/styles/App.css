@@ -1,8 +1,8 @@
 :root {
-    --body_bg: #e2dcde;
-    --sections_bg: #f1e4e8;
-    --details_bg: #ceb1be;
-    --slightly_dark_color: #b97375;
+    --body_bg: #d8dbe2;
+    --sections_bg: #a9bcd0;
+    --details_bg: #c1ccd9;
+    --slightly_dark_color: #373f51;
     --dark_color: #2d2d34;
 }
 
@@ -187,10 +187,20 @@ body {
 .contacts_container {
     width: 100vw;
 
+    background-color: var(--slightly_dark_color);
+
     transform: translateX(-50%);
     margin-left: 50%;
 
     margin-bottom: 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.contacts_container > h2 {
+    font-size: 3rem;
 }
 
 .contacts {
@@ -199,6 +209,10 @@ body {
     gap: 10px;
 
     align-items: center;
+}
+
+.contacts * {
+    font-size: 1.5rem;
 }
 
 .contacts > p {
