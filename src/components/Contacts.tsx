@@ -15,17 +15,17 @@ const Contacts: FC<Props> = () => {
 
                 <div className="contact phone ">
                     <img src={phone_img} alt="" className="icon" />
-                    <div>171-717-17171</div>
+                    <div>+55 (19)971610074</div>
                 </div>
 
                 <div className="contact email ">
                     <img src={email_img} alt="" className="icon" />
-                    <div>somethingsomething@email.com</div>
+                    <div>filipytav17@gmail.com</div>
                 </div>
             </div>
 
             <div className="footer icons">
-                <a href="#">
+                <a href="https://github.com/BiAniTy-AML">
                     <img
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                         alt=""
@@ -33,7 +33,7 @@ const Contacts: FC<Props> = () => {
                     />
                 </a>
 
-                <a href="#">
+                <a href="https://www.linkedin.com/in/filipy-tavares-208809256/">
                     <img
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
                         alt=""
