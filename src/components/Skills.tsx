@@ -4,7 +4,7 @@ interface Props {}
 
 const Skills: FC<Props> = () => {
     return (
-        <section className="skills_container section_cont">
+        <section className="skills_container section_cont" id="skills">
             <h2 className="header">Skills:</h2>
 
             <div className="known_tech">

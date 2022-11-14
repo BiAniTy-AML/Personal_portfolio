@@ -1,13 +1,13 @@
-import { FC } from 'react';
+import { FC } from "react";
 
-import phone_img from '../assets/icons/phone.svg';
-import email_img from '../assets/icons/mail.svg';
+import phone_img from "../assets/icons/phone.svg";
+import email_img from "../assets/icons/mail.svg";
 
 interface Props {}
 
 const Contacts: FC<Props> = () => {
     return (
-        <section className="contacts_container section_cont">
+        <section className="contacts_container section_cont" id="contacts">
             <h2 className="header">Contact me!</h2>
 
             <div className="contacts">

@@ -2,6 +2,7 @@
     --body_bg: #d8dbe2;
     --sections_bg: #a9bcd0;
     --details_bg: #c1ccd9;
+    --nav_bh: #8d9db1;
     --slightly_dark_color: #373f51;
     --dark_color: #2d2d34;
 }
@@ -13,8 +14,20 @@
     font-size: 16px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--body_bg);
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: none;
 }
 
 .main_container {
@@ -45,6 +58,47 @@ body {
 
     border-radius: 10px;
 }
+
+/* ---------------------------------------------------- */
+
+/* Navbar starts here */
+
+nav {
+    background: var(--nav_bh);
+    margin-bottom: 2rem;
+    color: var(--body_bg);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    /* Section ignores parent's max-width */
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+.my_name {
+    font-size: 2rem;
+    font-weight: bold;
+
+    color: var(--dark_color);
+}
+
+ul.sections {
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+
+    font-weight: bold;
+    margin-right: 4rem;
+}
+
+.sections a {
+    font-size: 1.5rem;
+}
+
+/* Navbar ends here */
 
 /* ---------------------------------------------------- */
 
@@ -96,6 +150,7 @@ body {
 }
 
 .tech {
+    color: var(--body_bg);
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -193,6 +248,7 @@ body {
     width: 100vw;
 
     background-color: var(--slightly_dark_color);
+    color: var(--body_bg);
 
     transform: translateX(-50%);
     margin-left: 50%;
