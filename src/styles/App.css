@@ -38,7 +38,7 @@ a:active {
 .section_cont {
     box-shadow: -3px -3px 3px black;
 
-    margin-bottom: 10px;
+    margin-bottom: 5vh;
 
     background-color: var(--sections_bg);
 }
@@ -92,6 +92,10 @@ nav {
     transform: scaleY(1);
 }
 
+.section_list_container.active ul.sections li:hover {
+    box-shadow: inset -6px 0 10px var(--nav_bh);
+}
+
 .section_list_container.active .sections_icon {
     transform: rotate(180deg);
 }
@@ -118,6 +122,11 @@ ul.sections {
 
     position: absolute;
     right: 0;
+}
+
+ul.sections li {
+    border-radius: 5px;
+    padding: 5px 0;
 }
 
 .sections_icon {

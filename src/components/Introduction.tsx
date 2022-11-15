@@ -8,6 +8,7 @@ const Intro: FC<Props> = () => {
     return (
         <section className="intro_container section_cont" id="intro">
             {/* Photo by <a href="https://unsplash.com/@degleex?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Degleex</a> on <a href="https://unsplash.com/s/photos/background-forest?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */}
+
             <img src={prof_pic} alt="" className="profile_pic" />
 
             <div className="greetings">
@@ -16,7 +17,9 @@ const Intro: FC<Props> = () => {
                 <div className="details">
                     <p>
                         Hello! My name is Filipy, and I am a self-taught
-                        front-end web developer.
+                        front-end web developer. I am passionate about
+                        programming in general, so I'm always improving and
+                        pushing myself to learn more about it :).
                     </p>
                 </div>
             </div>
