@@ -5,6 +5,16 @@ interface Props {}
 const Navbar: FC<Props> = () => {
     const [list_active, set_list_active] = useState<boolean>(false);
 
+    const mq: MediaQueryList = window.matchMedia("(min-width: 40em)");
+
+    const [screen_size, set_screen_size] = useState<"small" | "big">(
+        mq.matches ? "big" : "small",
+    );
+
+    mq.addEventListener("change", (e) => {
+        set_screen_size(e.matches ? "big" : "small");
+    });
+
     const arrow_down: ReactElement = (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +53,7 @@ const Navbar: FC<Props> = () => {
                         })
                     }
                 >
-                    {arrow_down}
+                    {screen_size === "small" ? arrow_down : ""}
                 </div>
 
                 <ul className="sections">

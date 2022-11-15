@@ -81,20 +81,11 @@ nav {
 }
 
 .my_name {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
 
     color: var(--dark_color);
 }
-
-/* ul.sections { */
-/*     display: flex; */
-/*     list-style: none; */
-/*     gap: 4rem; */
-
-/*     font-weight: bold; */
-/*     margin-right: 4rem; */
-/* } */
 
 .section_list_container.active ul.sections {
     max-height: 100vh;
@@ -368,5 +359,28 @@ ul.sections {
 
     .intro_container {
         flex-flow: row nowrap;
+    }
+
+    ul.sections {
+        gap: 5vw;
+
+        font-weight: bold;
+        margin-right: 1vw;
+
+        align-items: center;
+        flex-flow: row nowrap;
+
+        background-color: inherit;
+
+        max-height: fit-content;
+        transform: scaleY(1);
+
+        padding: 0;
+
+        position: relative;
+    }
+
+    .sections a {
+        font-size: 3vw;
     }
 }
