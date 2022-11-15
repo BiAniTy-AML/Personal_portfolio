@@ -194,7 +194,7 @@ ul.sections {
 
 .project .icons {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .project .screenshot {
@@ -211,18 +211,20 @@ ul.sections {
 .project .main_info {
     display: flex;
 
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
 
     align-self: stretch;
+
+    position: relative;
 }
 
 .project .name {
     font-weight: bold;
-    text-align: center;
 
-    margin-right: auto;
-    margin-left: auto;
+    position: absolute;
+    left: 50%;
+
+    transform: translateX(-50%);
 }
 
 .project .icon {

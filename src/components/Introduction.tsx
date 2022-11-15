@@ -15,13 +15,8 @@ const Intro: FC<Props> = () => {
 
                 <div className="details">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Labore qui in aperiam voluptatibus, nobis quo voluptatem
-                        veritatis esse. Repudiandae, esse! Iusto laboriosam
-                        optio recusandae, soluta porro assumenda voluptatibus
-                        animi, in veritatis voluptatum minima ipsa natus ducimus
-                        neque doloremque saepe, placeat fuga dolor eaque?
-                        Aliquid commodi quisquam ea dolorum, iusto voluptatem.
+                        Hello! My name is Filipy, and I am a self-taught
+                        front-end web developer.
                     </p>
                 </div>
             </div>

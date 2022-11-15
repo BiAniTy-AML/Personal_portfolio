@@ -1,4 +1,4 @@
-import React, { FC, ReactElement } from "react";
+import { FC, ReactElement } from "react";
 
 import external_link_img from "../assets/icons/external-link.svg";
 
