@@ -25,7 +25,7 @@ const Contacts: FC<Props> = () => {
             </div>
 
             <div className="footer icons">
-                <a href="https://github.com/BiAniTy-AML">
+                <a href="https://github.com/FilipyTav">
                     <img
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                         alt=""
