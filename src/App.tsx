@@ -1,5 +1,6 @@
 import { FC } from "react";
-import "./styles/App.css";
+// import "./styles/App.css";
+import "./styles/index.css";
 
 import Intro from "./components/Introduction";
 import Skills from "./components/Skills";

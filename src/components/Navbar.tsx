@@ -1,6 +1,6 @@
 import { FC, ReactElement, useState } from "react";
 
-interface Props {}
+interface Props { }
 
 const Navbar: FC<Props> = () => {
     const [list_active, set_list_active] = useState<boolean>(false);
@@ -8,7 +8,7 @@ const Navbar: FC<Props> = () => {
     const mq: MediaQueryList = window.matchMedia("(min-width: 40em)");
 
     const [screen_size, set_screen_size] = useState<"small" | "big">(
-        mq.matches ? "big" : "small",
+        mq.matches ? "big" : "small"
     );
 
     mq.addEventListener("change", (e) => {
@@ -38,12 +38,11 @@ const Navbar: FC<Props> = () => {
 
     return (
         <nav>
-            <div className="my_name">Filipy</div>
+            <div className="my_name bg-red-50">Filipy</div>
 
             <div
-                className={`section_list_container ${
-                    list_active ? "active" : ""
-                }`}
+                className={`section_list_container ${list_active ? "active" : ""
+                    }`}
             >
                 <div
                     className="sections_icon"
