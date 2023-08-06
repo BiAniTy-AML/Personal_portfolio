@@ -64,21 +64,25 @@ const Navbar: FC<Props> = () => {
                 </div>
                 */}
 
-                <ul className="flex flex-col text-center gap-1">
+                <ul className="flex flex-col text-center gap-1 min-h-screen justify-center">
                     {[["Intro"], ["Skills"], ["Projects"], ["Contacts"]].map(
                         ([title]) => (
                             <li
+                                key={`${title}`}
                                 onClick={disable_sections_list}
-                                className="relative backdrop-blur-lg text-shadow-sm shadow-violet-500 overflow-hidden shadow-[0px_0px_50px_-7px] 
-                                \ before:content-[''] before:absolute before:-left-1/2 before:w-1/3 before:h-[150%] before:-top-1/4 before:opacity-70
-                                \ before:skew-x-[45deg] before:bg-gradient-to-r before:from-transparent before:to-violet-50
-                                \ before:transition-left before:hover:left-[125%] before:duration-[900ms] before:ease-out before:blur-[2px]
-                                \ before:pointer-events-none
-"
+                                className="backdrop-blur-lg
+                                \ after:absolute after:all-0 after:pointer-events-none after:shadow-violet-500 after:shadow-[0px_0px_60px_-7px] 
+                                \ after:animate-pulse
+                                "
                             >
                                 <a
                                     href={`#${title.toLowerCase()}`}
-                                    className="full-anchor px-16 py-10 text-2xl border-sky-50"
+                                    className="full-anchor py-10 text-2xl relative overflow-hidden text-shadow-sm block
+                                    \ before:content-[''] before:absolute before:-left-2/3 before:w-1/3 before:h-[150%] before:-top-1/4 before:opacity-70
+                                    \ before:skew-x-[45deg] before:bg-gradient-to-r before:from-transparent before:to-violet-50
+                                    \ before:transition-left before:hover:left-[125%] before:duration-[900ms] before:ease-out before:blur-[2px]
+                                    \ before:pointer-events-none
+                                    "
                                 >
                                     {title}
                                 </a>
