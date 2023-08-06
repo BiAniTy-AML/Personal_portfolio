@@ -1,6 +1,6 @@
 import { FC, ReactElement, useState } from "react";
 
-interface Props { }
+interface Props {}
 
 const Navbar: FC<Props> = () => {
     const [list_active, set_list_active] = useState<boolean>(false);
@@ -37,13 +37,21 @@ const Navbar: FC<Props> = () => {
     };
 
     return (
-        <nav>
+        <nav
+            className="
+            \ bg-slate-950 text-violet-500 h-screen grid place-items-center 
+            \ md:sticky md:top-0 md:bottom-0 md:left-0"
+        >
+            {/*
             <div className="my_name bg-red-50">Filipy</div>
+            */}
 
             <div
-                className={`section_list_container ${list_active ? "active" : ""
-                    }`}
+                className={`w-full section_list_container ${
+                    list_active ? "active" : ""
+                }`}
             >
+                {/*
                 <div
                     className="sections_icon"
                     onClick={() =>
@@ -54,20 +62,29 @@ const Navbar: FC<Props> = () => {
                 >
                     {screen_size === "small" ? arrow_down : ""}
                 </div>
+                */}
 
-                <ul className="sections">
-                    <li onClick={disable_sections_list}>
-                        <a href="#intro">Intro</a>
-                    </li>
-                    <li onClick={disable_sections_list}>
-                        <a href="#skills">Skills</a>
-                    </li>
-                    <li onClick={disable_sections_list}>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li onClick={disable_sections_list}>
-                        <a href="#contacts">Contacts</a>
-                    </li>
+                <ul className="flex flex-col text-center gap-1">
+                    {[["Intro"], ["Skills"], ["Projects"], ["Contacts"]].map(
+                        ([title]) => (
+                            <li
+                                onClick={disable_sections_list}
+                                className="relative backdrop-blur-lg text-shadow-sm shadow-violet-500 overflow-hidden shadow-[0px_0px_50px_-7px] 
+                                \ before:content-[''] before:absolute before:-left-1/2 before:w-1/3 before:h-[150%] before:-top-1/4 before:opacity-70
+                                \ before:skew-x-[45deg] before:bg-gradient-to-r before:from-transparent before:to-violet-50
+                                \ before:transition-left before:hover:left-[125%] before:duration-[900ms] before:ease-out before:blur-[2px]
+                                \ before:pointer-events-none
+"
+                            >
+                                <a
+                                    href={`#${title.toLowerCase()}`}
+                                    className="full-anchor px-16 py-10 text-2xl border-sky-50"
+                                >
+                                    {title}
+                                </a>
+                            </li>
+                        )
+                    )}
                 </ul>
             </div>
         </nav>

@@ -10,16 +10,18 @@ import Navbar from "./components/Navbar";
 
 const App: FC = () => {
     return (
-        <div className="main_container">
+        <div className="grid grid-rows-1 md:grid-cols-[1fr_2fr]">
             <Navbar />
 
             <Intro />
 
+            {/* 
             <Skills />
 
             <Projects />
 
             <Contacts />
+            */}
         </div>
     );
 };

@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+@layer components {
+    .full-anchor {
+        @apply w-full h-full inline-block;
+    }
+
+    .all-0 {
+        @apply top-0 right-0 bottom-0 left-0;
+    }
+}
