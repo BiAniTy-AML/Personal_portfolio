@@ -9,12 +9,18 @@
     font-size: 16px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @layer components {
     .full-anchor {
         @apply w-full h-full inline-block;
     }
-
     .all-0 {
         @apply top-0 right-0 bottom-0 left-0;
+    }
+    .show-up {
+        @apply outline-red-500 outline-2 outline-dashed;
     }
 }

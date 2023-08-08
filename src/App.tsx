@@ -14,8 +14,8 @@ const App: FC = () => {
             <Navbar />
 
             <Intro />
-
             {/* 
+
             <Skills />
 
             <Projects />

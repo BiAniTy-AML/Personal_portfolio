@@ -39,8 +39,9 @@ const Navbar: FC<Props> = () => {
     return (
         <nav
             className="
-            \ bg-slate-950 text-violet-500 h-screen grid place-items-center 
-            \ md:sticky md:top-0 md:bottom-0 md:left-0"
+            \ bg-slate-950 text-violet-500 h-screen grid place-items-center overflow-y-hidden
+            \ md:sticky md:top-0 md:bottom-0 md:left-0 md:p-2
+            "
         >
             {/*
             <div className="my_name bg-red-50">Filipy</div>
