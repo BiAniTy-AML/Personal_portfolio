@@ -4,12 +4,14 @@ import prof_pic from "../assets/images/profile_picture.jpg";
 import AnimatedBg from "./AnimatedBg";
 import AnimatedWords from "./AnimatedWords";
 
-interface Props {}
+interface Props { }
 
 const Intro: FC<Props> = () => {
     return (
         <section
-            className="bg-gray-950 text-white flex flex-col justify-center px-2 relative bg-ellipsis-night"
+            className="bg-gray-950 text-white flex flex-col justify-center px-2 relative bg-ellipsis-night row-span-1
+            min-h-screen
+            "
             id="intro"
         >
             <AnimatedBg />

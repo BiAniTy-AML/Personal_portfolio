@@ -1,6 +1,6 @@
 import { FC, ReactElement, useState } from "react";
 
-interface Props {}
+interface Props { }
 
 const Navbar: FC<Props> = () => {
     const [list_active, set_list_active] = useState<boolean>(false);
@@ -40,7 +40,7 @@ const Navbar: FC<Props> = () => {
         <nav
             className="
             \ bg-slate-950 text-violet-500 h-screen grid place-items-center overflow-y-hidden
-            \ md:sticky md:top-0 md:bottom-0 md:left-0 md:p-2
+            \ md:sticky md:top-0 md:bottom-0 md:left-0 md:p-2 row-span-full
             "
         >
             {/*
@@ -48,9 +48,8 @@ const Navbar: FC<Props> = () => {
             */}
 
             <div
-                className={`w-full section_list_container ${
-                    list_active ? "active" : ""
-                }`}
+                className={`w-full section_list_container ${list_active ? "active" : ""
+                    }`}
             >
                 {/*
                 <div

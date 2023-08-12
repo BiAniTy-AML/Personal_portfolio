@@ -106,12 +106,17 @@ const Projects: FC<Props> = () => {
 
                     <div className="description">{proj.description}</div>
                 </div>
-            </div>,
-        ),
+            </div>
+        )
     );
 
     return (
-        <section className="projects_container section_cont" id="projects">
+        <section
+            className="md:row-start-3 md:row-span-1 md:col-start-2 md:col-span-1
+            min-h-screen
+            "
+            id="projects"
+        >
             <h2 className="header">Projects:</h2>
 
             <div className="projects">

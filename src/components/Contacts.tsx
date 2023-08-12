@@ -7,7 +7,12 @@ interface Props {}
 
 const Contacts: FC<Props> = () => {
     return (
-        <section className="contacts_container section_cont" id="contacts">
+        <section
+            className="md:row-start-4 md:row-span-1 md:col-start-2 md:col-span-1
+            min-h-screen
+            "
+            id="contacts"
+        >
             <h2 className="header">Contact me!</h2>
 
             <div className="contacts">

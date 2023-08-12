@@ -11,18 +11,19 @@ import Skills from "./components/Skills";
 
 const App: FC = () => {
     return (
-        <div className="grid grid-rows-1 md:grid-cols-[1fr_2fr]">
+        // FIX: figure out how to make the grid word
+        <div className="grid grid-rows-1 md:grid-cols-[1fr_2fr] md:grid-rows-[repeat(4, 100vh)]">
             <Navbar />
 
             <Intro />
-            {/* 
 
             <Skills />
 
             <Projects />
 
             <Contacts />
-            */}
+            {/*
+             */}
         </div>
     );
 };
