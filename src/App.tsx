@@ -2,11 +2,12 @@ import { FC } from "react";
 // import "./styles/App.css";
 import "./styles/index.css";
 
-import Intro from "./components/Introduction";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
+import AnimatedBg from "./components/AnimatedBg";
 import Contacts from "./components/Contacts";
+import Intro from "./components/Introduction";
 import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 const App: FC = () => {
     return (
