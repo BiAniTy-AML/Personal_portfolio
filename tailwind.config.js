@@ -29,13 +29,29 @@ module.exports = {
                 lg: "0 8px 16px var(--tw-shadow-color)",
             },
             backgroundImage: {
-                "ellipsis-night":
+                "ellipsis-night-b":
                     "radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%)",
+                "ellipsis-night-t":
+                    "radial-gradient(ellipse at top, #1B2735 0%, #090A0F 100%)",
+                "ellipsis-night-tb":
+                    "radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%), radial-gradient(ellipse at top, #1B2735 0%, #090A0F 100%)",
+
+                "dark-shine":
+                    "linear-gradient(71deg, #080509, #1a171c, #080509)",
+
+                "white-shine":
+                    "linear-gradient(71deg, transparent, #1a171c, transparent)",
             },
             boxShadow: {
                 "multiple-sm": multipleBoxShadow(700),
                 "multiple-md": multipleBoxShadow(200),
                 "multiple-lg": multipleBoxShadow(100),
+            },
+            gridTemplateColumns: {
+                "auto-fill-100": "repeat(auto-fill, minmax(100px, 1fr))",
+
+                "auto-fit-100": "repeat(auto-fit, minmax(100px, 1fr))",
+                "auto-fit-200": "repeat(auto-fit, minmax(200px, 1fr))",
             },
             animation: {
                 wiggle: "wiggle 1s ease-in-out infinite",
@@ -45,6 +61,10 @@ module.exports = {
                 "star-sm": "animStar 50s linear infinite",
                 "star-md": "animStar 100s linear infinite",
                 "star-lg": "animStar 150s linear infinite",
+
+                hovering: "hover 3s linear infinite",
+                "spin-fast": "spin .3s linear",
+                bump: "bump .5s linear",
             },
             keyframes: {
                 wiggle: {
@@ -67,10 +87,20 @@ module.exports = {
                         transform: "translateY(-2000px)",
                     },
                 },
+                hover: {
+                    "0%, 100%": { transform: "translateY(0)" },
+                    "25%": { transform: "translateY(10px)" },
+                    "75%": { transform: "translateY(-10%)" },
+                },
+                bump: {
+                    "0%, 100%": { transform: "translateY(0)" },
+                    "50%": { transform: "translateY(-10%)" },
+                },
             },
         },
     },
     plugins: [
+        require("tailwindcss-animate"),
         function ({ addVariant }) {
             addVariant("children", "& > *");
             addVariant("children-hover", "& > *:hover");

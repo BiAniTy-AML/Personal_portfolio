@@ -29,7 +29,7 @@ const AnimatedBg: FC<Props> = () => {
             <div
                 className={
                     `w-[0px] h-[1px] bg-transparent z-50 shadow-multiple-sm animate-star-sm
-                 \ overflow-visible absolute shadow-white pointer-events-none
+                overflow-visible absolute shadow-white pointer-events-none
                 `
                     // \ after:content-[''] after:absolute after:top-[2000px] after:w-[1px] after:h-[1px]
                     // \ after:bg-transparent after:shadow-multiple-sm after:shadow-white
@@ -39,7 +39,7 @@ const AnimatedBg: FC<Props> = () => {
             <div
                 className={
                     `w-[2px] h-[2px] bg-transparent z-50 shadow-multiple-md animate-star-md
-                \ overflow-visible absolute shadow-white pointer-events-none
+                overflow-visible absolute shadow-white pointer-events-none
                 `
                     // \ after:content-[''] after:absolute after:top-[2000px] after:w-[2px] after:h-[2px]
                     // \ after:bg-transparent after:shadow-multiple-md after:shadow-white
@@ -49,7 +49,7 @@ const AnimatedBg: FC<Props> = () => {
             <div
                 className={
                     `w-[3px] h-[3px] bg-transparent z-50 shadow-multiple-lg animate-star-lg
-                \ overflow-visible absolute shadow-white pointer-events-none
+                overflow-visible absolute shadow-white pointer-events-none
                 `
                     // \ after:content-[''] after:absolute after:top-[2000px] after:w-[2px] after:h-[2px]
                     // \ after:bg-transparent after:shadow-multiple-lg after:shadow-white
