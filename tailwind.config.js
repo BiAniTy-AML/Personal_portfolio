@@ -52,6 +52,7 @@ module.exports = {
 
                 "auto-fit-100": "repeat(auto-fit, minmax(100px, 1fr))",
                 "auto-fit-200": "repeat(auto-fit, minmax(200px, 1fr))",
+                "auto-fit-300": "repeat(auto-fit, minmax(300px, 1fr))",
             },
             animation: {
                 wiggle: "wiggle 1s ease-in-out infinite",
@@ -101,14 +102,14 @@ module.exports = {
     },
     plugins: [
         require("tailwindcss-animate"),
-        function ({ addVariant }) {
+        function({ addVariant }) {
             addVariant("children", "& > *");
             addVariant("children-hover", "& > *:hover");
 
             addVariant("descendants", "& *");
             addVariant("descendants-hover", "& *:hover");
         },
-        function ({ matchUtilities, theme }) {
+        function({ matchUtilities, theme }) {
             matchUtilities(
                 {
                     "text-shadow": (value) => ({

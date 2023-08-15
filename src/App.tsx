@@ -2,7 +2,6 @@ import { FC } from "react";
 // import "./styles/App.css";
 import "./styles/index.css";
 
-import AnimatedBg from "./components/AnimatedBg";
 import Contacts from "./components/Contacts";
 import Intro from "./components/Introduction";
 import Navbar from "./components/Navbar";

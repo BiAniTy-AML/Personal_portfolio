@@ -49,7 +49,7 @@ const Skills: FC<Props> = () => {
     return (
         <section
             className="md:row-start-2 md:row-span-1 md:col-start-2 md:col-span-1
-            min-h-screen bg-gray-950 text-white bg-ellipsis-night-t p-2
+            min-h-screen section
             "
             id="skills"
         >
