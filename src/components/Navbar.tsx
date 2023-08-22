@@ -1,5 +1,6 @@
 import { FC, ReactElement, useState } from "react";
 
+// BUG: nav animation on hover is too fast
 interface Props { }
 
 const Navbar: FC<Props> = () => {
