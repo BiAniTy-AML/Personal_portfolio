@@ -1,4 +1,5 @@
 import { FC } from "react";
+import Spotlight, { SpotlightCard } from "./Spotlight";
 
 interface Props {}
 
@@ -33,7 +34,7 @@ const Skills: FC<Props> = () => {
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
         ],
         [
-            "TailwindCSS",
+            "Tailwind",
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
         ],
         [
@@ -55,13 +56,13 @@ const Skills: FC<Props> = () => {
         >
             <h2 className="header">Skills:</h2>
 
-            <div className="grid grid-cols-auto-fit-100 md:grid-cols-auto-fit-200 gap-2">
+            <Spotlight className="grid grid-cols-auto-fit-100 md:grid-cols-auto-fit-200 gap-2">
                 {known_tech.map(([name, url]) => (
-                    <div
+                    <SpotlightCard
                         key={name + url}
                         className="border-[2px solid transparent] border-2 border-solid border-gray-300 bg-shine bg-white-shine
-                        shadow-gray-200 shadow-[0_0_60px_-15px,inset_0_0_20px_-15px] rounded-lg p-2 
-                        hover:animate-bump 
+                        shadow-gray-200 shadow-[0_0_30px_-15px,inset_0_0_20px_-15px] rounded-lg p-4
+                        hover:animate-none 
                         "
                     >
                         <img
@@ -72,9 +73,9 @@ const Skills: FC<Props> = () => {
                         />
 
                         <div className="text-center text-lg ">{name}</div>
-                    </div>
+                    </SpotlightCard>
                 ))}
-            </div>
+            </Spotlight>
         </section>
     );
 };
