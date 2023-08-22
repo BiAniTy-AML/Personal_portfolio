@@ -41,6 +41,8 @@ module.exports = {
 
                 "white-shine":
                     "linear-gradient(71deg, transparent, #1a171c, transparent)",
+
+                sheen: "linear-gradient(217deg, rgba(255,255,255,0), rgba(255,255,255,0) 35%, rgba(255,255,255,0.25) 45%, rgba(255,255,255,.25) 50%, rgba(255,255,255,0) 60%, rgba(255,255,255,0) 100%)",
             },
             boxShadow: {
                 "multiple-sm": multipleBoxShadow(700),
@@ -102,14 +104,14 @@ module.exports = {
     },
     plugins: [
         // require("tailwindcss-animate"),
-        function({ addVariant }) {
+        function ({ addVariant }) {
             addVariant("children", "& > *");
             addVariant("children-hover", "& > *:hover");
 
             addVariant("descendants", "& *");
             addVariant("descendants-hover", "& *:hover");
         },
-        function({ matchUtilities, theme }) {
+        function ({ matchUtilities, theme }) {
             matchUtilities(
                 {
                     "text-shadow": (value) => ({

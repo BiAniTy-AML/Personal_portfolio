@@ -4,6 +4,7 @@ import prof_pic from "../assets/images/profile_picture.jpg";
 import AnimatedBg from "./AnimatedBg";
 import AnimatedWords from "./AnimatedWords";
 import Spotlight, { SpotlightCard } from "./Spotlight";
+import CardFollow from "./CardFollow";
 
 interface Props {}
 
@@ -26,23 +27,25 @@ const Intro: FC<Props> = () => {
             />
 
             <Spotlight>
-                <SpotlightCard
-                    className="max-w-[80vw] mx-auto py-[40px] px-4
-                 "
-                >
-                    <h2 className="text-center text-lg font-bold min-w-full">
-                        About me
-                    </h2>
+                <CardFollow>
+                    <SpotlightCard
+                        className="max-w-[80vw] mx-auto py-[40px] px-4
+                    "
+                    >
+                        <h2 className="text-center text-lg font-bold min-w-full">
+                            About me
+                        </h2>
 
-                    <div className="details">
-                        <p>
-                            Hello! My name is Filipy, and I am a full-stack web
-                            developer. I am passionate about programming in
-                            general, so I'm always improving and pushing myself
-                            to learn more about it :).
-                        </p>
-                    </div>
-                </SpotlightCard>
+                        <div className="details">
+                            <p>
+                                Hello! My name is Filipy, and I am a full-stack
+                                web developer. I am passionate about programming
+                                in general, so I'm always improving and pushing
+                                myself to learn more about it :).
+                            </p>
+                        </div>
+                    </SpotlightCard>
+                </CardFollow>
             </Spotlight>
         </section>
     );

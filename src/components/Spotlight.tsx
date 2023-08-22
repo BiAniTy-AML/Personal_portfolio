@@ -55,6 +55,7 @@ const Spotlight = ({ children, className = "" }: SpotlightProps) => {
             if (inside) {
                 mouse.current.x = x;
                 mouse.current.y = y;
+
                 boxes.forEach((box) => {
                     const boxX =
                         -(box.getBoundingClientRect().left - rect.left) +
@@ -62,6 +63,7 @@ const Spotlight = ({ children, className = "" }: SpotlightProps) => {
                     const boxY =
                         -(box.getBoundingClientRect().top - rect.top) +
                         mouse.current.y;
+
                     box.style.setProperty("--mouse-x", `${boxX}px`);
                     box.style.setProperty("--mouse-y", `${boxY}px`);
                 });
