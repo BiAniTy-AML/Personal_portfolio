@@ -8,6 +8,7 @@ import {
     phone as phone_icon,
     email as email_icon,
 } from "../utils/icons";
+import Spotlight, { SpotlightCard } from "./Spotlight";
 
 interface Props {}
 
@@ -46,10 +47,18 @@ const Contacts: FC<Props> = () => {
                 ))}
             </div>
 
+            <Spotlight className="p-1 mt-2">
+                <SpotlightCard className="p-10 text-lg">
+                    “The best thing about a boolean is even if you are wrong,
+                    you are only off by a bit.”
+                </SpotlightCard>
+            </Spotlight>
+
             <div
-                className="flex absolute gap-6
-                 bottom-10 left-1/2 -translate-x-1/2
+                className="flex gap-16 mx-auto max-w-fit
+                 mt-[15%] my-auto
                  "
+                // absolute bottom-10 left-1/2 -translate-x-1/2
             >
                 {[
                     ["https://github.com/FilipyTav", github_icon],
