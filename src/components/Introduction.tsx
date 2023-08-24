@@ -27,25 +27,23 @@ const Intro: FC<Props> = () => {
             />
 
             <Spotlight>
-                <CardFollow>
-                    <SpotlightCard
-                        className="max-w-[80vw] mx-auto py-[40px] px-4
+                <SpotlightCard
+                    className="max-w-[80vw] mx-auto py-[40px] px-4
                     "
-                    >
-                        <h2 className="text-center text-lg font-bold min-w-full">
-                            About me
-                        </h2>
+                >
+                    <h2 className="text-center text-lg font-bold min-w-full">
+                        About me
+                    </h2>
 
-                        <div className="details">
-                            <p>
-                                Hello! My name is Filipy, and I am a full-stack
-                                web developer. I am passionate about programming
-                                in general, so I'm always improving and pushing
-                                myself to learn more about it :).
-                            </p>
-                        </div>
-                    </SpotlightCard>
-                </CardFollow>
+                    <div className="details">
+                        <p>
+                            Hello! My name is Filipy, and I am a full-stack web
+                            developer. I am passionate about programming in
+                            general, so I'm always improving and pushing myself
+                            to learn more about it :).
+                        </p>
+                    </div>
+                </SpotlightCard>
             </Spotlight>
         </section>
     );

@@ -26,4 +26,7 @@ html {
     .section {
         @apply bg-gray-950 text-white bg-ellipsis-night-t p-2;
     }
+    .section-header {
+        @apply text-center font-bold text-3xl;
+    }
 }
